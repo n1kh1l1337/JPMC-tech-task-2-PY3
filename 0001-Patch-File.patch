@@ -1,0 +1,194 @@
+From 45a1759c18406d4897ce1cefc889bc0fce17ffa1 Mon Sep 17 00:00:00 2001
+From: Nikhil Sharma <jangidnik@gmail.com>
+Date: Tue, 17 Aug 2021 22:09:48 +0530
+Subject: [PATCH] Patch File
+
+---
+ package-lock.json | 63 +++++++++++++++++++++++++++++++++++++++++++++--
+ package.json      |  1 +
+ src/Graph.tsx     | 17 ++++++++++---
+ 3 files changed, 75 insertions(+), 6 deletions(-)
+
+diff --git a/package-lock.json b/package-lock.json
+index fcb5324..ee53550 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -2285,6 +2285,42 @@
+       "resolved": "https://registry.npmjs.org/@csstools/convert-colors/-/convert-colors-1.4.0.tgz",
+       "integrity": "sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw=="
+     },
++    "@finos/perspective": {
++      "version": "0.10.1",
++      "resolved": "https://registry.npmjs.org/@finos/perspective/-/perspective-0.10.1.tgz",
++      "integrity": "sha512-3VcYz44bvX7klB72BhAOMEQFO79e3IYSCh/NlxRn3zzMUSZA/zqEn30nrsJ2n4ntR3m5fmP2LKRd+QyREvyG9w==",
++      "requires": {
++        "@babel/runtime": "^7.8.4",
++        "core-js": "^3.6.4",
++        "d3-array": "^1.2.1",
++        "detectie": "1.0.0",
++        "flatbuffers": "^1.10.2",
++        "lodash": "^4.17.4",
++        "text-encoding-utf-8": "^1.0.2",
++        "tslib": "^1.9.3",
++        "ws": "^6.1.2"
++      },
++      "dependencies": {
++        "@babel/runtime": {
++          "version": "7.15.3",
++          "resolved": "https://registry.npmjs.org/@babel/runtime/-/runtime-7.15.3.tgz",
++          "integrity": "sha512-OvwMLqNXkCXSz1kSm58sEsNuhqOx/fKpnUnKnFB5v8uDda5bLNEHNgKPvhDN6IU0LDcnHQ90LlJ0Q6jnyBSIBA==",
++          "requires": {
++            "regenerator-runtime": "^0.13.4"
++          }
++        },
++        "core-js": {
++          "version": "3.16.2",
++          "resolved": "https://registry.npmjs.org/core-js/-/core-js-3.16.2.tgz",
++          "integrity": "sha512-P0KPukO6OjMpjBtHSceAZEWlDD1M2Cpzpg6dBbrjFqFhBHe/BwhxaP820xKOjRn/lZRQirrCusIpLS/n2sgXLQ=="
++        },
++        "regenerator-runtime": {
++          "version": "0.13.9",
++          "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz",
++          "integrity": "sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA=="
++        }
++      }
++    },
+     "@jpmorganchase/perspective": {
+       "version": "0.2.12",
+       "resolved": "https://registry.npmjs.org/@jpmorganchase/perspective/-/perspective-0.2.12.tgz",
+@@ -4908,7 +4944,8 @@
+         },
+         "kind-of": {
+           "version": "6.0.2",
+-          "resolved": ""
++          "resolved": "https://registry.npmjs.org/kind-of/-/kind-of-6.0.2.tgz",
++          "integrity": "sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA=="
+         }
+       }
+     },
+@@ -6956,6 +6993,11 @@
+         }
+       }
+     },
++    "detectie": {
++      "version": "1.0.0",
++      "resolved": "https://registry.npmjs.org/detectie/-/detectie-1.0.0.tgz",
++      "integrity": "sha1-ZrLK4iNtTSnvcRYRgJV7+J++U10="
++    },
+     "diff": {
+       "version": "3.5.0",
+       "resolved": "https://registry.npmjs.org/diff/-/diff-3.5.0.tgz",
+@@ -8363,6 +8405,12 @@
+         "schema-utils": "^1.0.0"
+       }
+     },
++    "file-uri-to-path": {
++      "version": "1.0.0",
++      "resolved": "https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz",
++      "integrity": "sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==",
++      "optional": true
++    },
+     "filename-regex": {
+       "version": "2.0.1",
+       "resolved": "https://registry.npmjs.org/filename-regex/-/filename-regex-2.0.1.tgz",
+@@ -18273,7 +18321,8 @@
+         },
+         "kind-of": {
+           "version": "6.0.2",
+-          "resolved": ""
++          "resolved": "https://registry.npmjs.org/kind-of/-/kind-of-6.0.2.tgz",
++          "integrity": "sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA=="
+         }
+       }
+     },
+@@ -19755,6 +19804,15 @@
+           "integrity": "sha1-qJS3XUvE9s1nnvMkSp/Y9Gri1Cg=",
+           "optional": true
+         },
++        "bindings": {
++          "version": "1.5.0",
++          "resolved": "https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz",
++          "integrity": "sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==",
++          "optional": true,
++          "requires": {
++            "file-uri-to-path": "1.0.0"
++          }
++        },
+         "braces": {
+           "version": "2.3.2",
+           "resolved": "https://registry.npmjs.org/braces/-/braces-2.3.2.tgz",
+@@ -19820,6 +19878,7 @@
+           "integrity": "sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==",
+           "optional": true,
+           "requires": {
++            "bindings": "^1.5.0",
+             "nan": "^2.12.1"
+           }
+         },
+diff --git a/package.json b/package.json
+index 1a82ab0..bc1c372 100644
+--- a/package.json
++++ b/package.json
+@@ -3,6 +3,7 @@
+   "version": "0.1.0",
+   "private": true,
+   "dependencies": {
++    "@finos/perspective": "^0.10.1",
+     "@jpmorganchase/perspective": "^0.2.12",
+     "@jpmorganchase/perspective-viewer": "^0.2.12",
+     "@jpmorganchase/perspective-viewer-highcharts": "^0.2.12",
+diff --git a/src/Graph.tsx b/src/Graph.tsx
+index ec1430e..7035b66 100644
+--- a/src/Graph.tsx
++++ b/src/Graph.tsx
+@@ -1,5 +1,5 @@
+ import React, { Component } from 'react';
+-import { Table } from '@jpmorganchase/perspective';
++import { Table } from '@finos/perspective';
+ import { ServerRespond } from './DataStreamer';
+ import './Graph.css';
+ 
+@@ -14,7 +14,7 @@ interface IProps {
+  * Perspective library adds load to HTMLElement prototype.
+  * This interface acts as a wrapper for Typescript compiler.
+  */
+-interface PerspectiveViewerElement {
++interface PerspectiveViewerElement extends HTMLElement{
+   load: (table: Table) => void,
+ }
+ 
+@@ -32,7 +32,7 @@ class Graph extends Component<IProps, {}> {
+ 
+   componentDidMount() {
+     // Get element to attach the table from the DOM.
+-    const elem: PerspectiveViewerElement = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
++    const elem = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
+ 
+     const schema = {
+       stock: 'string',
+@@ -49,6 +49,15 @@ class Graph extends Component<IProps, {}> {
+ 
+       // Add more Perspective configurations here.
+       elem.load(this.table);
++      elem.setAttribute('view', 'y_line');
++      elem.setAttribute('column-pivots', '["stock"]');
++      elem.setAttribute('row-pivots', '["timestamp"]');
++      elem.setAttribute('columns','["top_ask_price"]');
++      elem.setAttribute('aggregates', `
++      {"stock": "distinct count",
++      "top_ask_price":"avg",
++      "top_bid_price": "avg",
++      "timestamp":"distinct count"}`)
+     }
+   }
+ 
+@@ -70,4 +79,4 @@ class Graph extends Component<IProps, {}> {
+   }
+ }
+ 
+-export default Graph;
++export default Graph;
+\ No newline at end of file
+-- 
+2.32.0.windows.2
+
